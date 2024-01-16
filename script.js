@@ -183,3 +183,63 @@ if (age2 > 18) {
 } else {
   document.getElementsByClassName("eligible")[1].innerHTML = "არა";
 }
+
+// if (condition1) {
+//   // შესასრულებელი პირობა
+// } else if (condition2) {
+//   // პირობა, რომელიც უნდა შესრულდეს, თუ პირველი პირობა არ შესრულდა
+// } else {
+//   // პირობა, რომელიც უნდა შესრულდეს, თუ ზედა ორი პირობა არ შესრულდა
+// }
+
+let eqw = 15;
+
+if (eqw > 25) {
+  console.log("ეს რიცხვი არის 25-ზე მეტი");
+} else if (eqw > 15) {
+  console.log("ეს რიცხვი მეტია 15-ზე");
+} else {
+  console.log("ეს რიცხვი ვერ გევიგე რა არი");
+}
+
+// SWITCH ლოგიკური ოპერატორი
+// switch (expression) {
+//   case value1:
+//     // კოდი, რომელიც უნდა განხორციელდეს, თუ value1 სრულდება
+//     break;
+
+//   case value2:
+//     // კოდი, რომელიც უნდა განხორციელდეს, თუ value1 არ  სრულდება და სრულდება value2
+//     break;
+
+//   case value3:
+//     // კოდი, რომელიც უნდა განხორციელდეს, თუ value1 და value2 არ სრულდება და სრულდება value3
+//     break;
+// }
+
+let weekday = "შაბათი";
+
+switch (weekday) {
+  
+  case "ორშაბათი":
+    console.log("დღეს შენ არ გაქვს ლექცია");
+    break;
+  case "სამშაბათი":
+    console.log("დღეს შენ გაქვს ლექცია 6-დან 8-მდე");
+    break;
+  case "ოთხშაბათი":
+    console.log("დღეს შენ არ გაქვს ლექცია");
+    break;
+  case "ხუთშაბათი":
+    console.log("დღეს შენ გაქვს ლექცია 6-დან 8-მდე");
+    break;
+  case "პარასკევი":
+    console.log("დღეს შენ არ გაქვს ლექცია");
+    break;
+  case "შაბათი":
+    console.log("დღეს შენ გაქვს ლექცია 6-დან 8-მდე");
+    break;
+  case "კვირა":
+    console.log("დღეს შენ არ გაქვს ლექცია");
+    break;
+}
