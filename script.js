@@ -220,7 +220,6 @@ if (eqw > 25) {
 let weekday = "შაბათი";
 
 switch (weekday) {
-  
   case "ორშაბათი":
     console.log("დღეს შენ არ გაქვს ლექცია");
     break;
@@ -243,3 +242,62 @@ switch (weekday) {
     console.log("დღეს შენ არ გაქვს ლექცია");
     break;
 }
+
+// TERNARY operator
+
+// condition ? expression_if_true : expression_if_false
+
+console.log(
+  5 > 10 // condition
+    ? "5 მეტია 10-ზე" // if_true
+    : 5 < 3 // if_false
+    ? "5 მეტია 3-ზე"
+    : 10 > 3
+    ? true
+    : false
+);
+
+// PROMPT()
+
+// let username = prompt("გთხოვთ შეიყვანოთ თქვენი მომხმარებლის სახელი");
+
+// alert("გამარჯობა, " + username + "! კეთილი იყოს თქვენი მობრძანება")
+
+// const namePrompt = prompt("შეიყვანეთ თქვენი სახელი;");
+// const surnamePrompt = prompt("შეიყვანეთ თქვენი გვარი");
+// const agePrompt = prompt("შეიყვანეთ თქვენი ასაკი");
+
+// let saxeli1 = namePrompt;
+// let gvari1 = surnamePrompt;
+// let asaki1 = agePrompt;
+
+// document.getElementsByClassName("saxeli")[0].innerHTML = saxeli1;
+// document.getElementsByClassName("gvari")[0].innerHTML = gvari1;
+
+// asaki1 >= 18
+//   ? (document.getElementsByClassName("nebartva")[0].innerHTML = "კი")
+//   : (document.getElementsByClassName("nebartva")[0].innerHTML = "არა");
+
+let count = 0
+
+function updateCounter() {
+  document.getElementById("counter").innerText = "Count: " + count
+}
+
+function mimateba() {
+  count++
+  updateCounter()
+} 
+
+function gamokleba() {
+  count--
+  updateCounter()
+} 
+
+function reset() {
+  count = 0
+  updateCounter()
+} 
+
+
+
